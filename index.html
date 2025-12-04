@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WASSCE A1 Study Pack — Fast Revision</title>
+  <meta name="description" content="Free WASSCE A1 Study Pack: condensed notes, past questions, and weekly mock tests to help you score A1." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0b5cff;--muted:#6b7280;--bg:#f7f8fb}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:18px;text-decoration:none;color:inherit;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:18px}
+    .card{background:white;padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid #e6e9f2}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .feature{padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #eef2ff}
+    .subjects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px}
+    .subject{padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#fffdfa);border:1px solid #f2f8f2}
+    footer{padding:30px 0;color:var(--muted);text-align:center;margin-top:26px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.nav-hidden{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">W</div>
+        <div>
+          <div style="font-weight:700">WASSCE A1 Study Pack</div>
+          <div style="font-size:12px;color:var(--muted)">Fast revision • Mock tests • Past questions</div>
+        </div>
+      </div>
+      <nav class="nav-hidden">
+        <a href="#subjects">Subjects</a>
+        <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section>
+        <div class="card">
+          <h1>Score A1 in WASSCE — Start with the essentials</h1>
+          <p class="lead">Condensed notes, solved past questions, exam strategies and weekly mocks for English, Core Maths, Integrated Science, Social Studies and electives.</p>
+          <div class="cta">
+            <button class="btn btn-primary" id="downloadBtn">Download study pack (PDF)</button>
+            <button class="btn btn-ghost" id="previewBtn">Preview online</button>
+          </div>
+
+          <div class="features" style="margin-top:18px">
+            <div class="feature">
+              <strong>Concise notes</strong>
+              <div style="color:var(--muted);font-size:13px">High-yield summaries for fast revision.</div>
+            </div>
+            <div class="feature">
+              <strong>Past questions</strong>
+              <div style="color:var(--muted);font-size:13px">Solved and explained questions from recent WASSCE papers.</div>
+            </div>
+            <div class="feature">
+              <strong>Mock tests</strong>
+              <div style="color:var(--muted);font-size:13px">Weekly timed tests to build exam confidence.</div>
+            </div>
+            <div class="feature">
+              <strong>Exam tips</strong>
+              <div style="color:var(--muted);font-size:13px">Time management, common pitfalls and scoring techniques.</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="subjects" style="margin-top:16px">
+          <h3 style="margin:8px 0">Subjects included</h3>
+          <div class="subjects">
+            <div class="subject"><strong>English Language</strong><div style="font-size:13px;color:var(--muted)">Composition, comprehension, summary</div></div>
+            <div class="subject"><strong>Core Mathematics</strong><div style="font-size:13px;color:var(--muted)">Formulas, worked examples</div></div>
+            <div class="subject"><strong>Integrated Science</strong><div style="font-size:13px;color:var(--muted)">Biology, Chemistry, Physics essentials</div></div>
+            <div class="subject"><strong>Social Studies</strong><div style="font-size:13px;color:var(--muted)">Essays, short answer strategies</div></div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside style="max-width:360px">
+        <div class="card">
+          <h4 style="margin-top:0">Quick Start</h4>
+          <ol style="padding-left:18px;margin:6px 0;color:var(--muted)">
+            <li>Download the PDF</li>
+            <li>Read 2 topics daily</li>
+            <li>Do the past questions</li>
+            <li>Take a timed mock each weekend</li>
+          </ol>
+          <div style="margin-top:12px">
+            <label style="font-size:13px;color:var(--muted)">Enter your email to get weekly mock tests (no spam)</label>
+            <form onsubmit="event.preventDefault();alert('Thanks! add your email to mailing list manually.');" style="display:flex;gap:8px;margin-top:8px">
+              <input type="email" placeholder="you@example.com" required style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6e9f2">
+              <button class="btn btn-primary" style="padding:10px 12px">Subscribe</button>
+            </form>
+          </div>
+
+          <hr style="margin:12px 0;border:none;border-top:1px solid #f1f5f9">
+          <div style="font-size:13px;color:var(--muted)"><strong>Note:</strong> This is a free digital study pack you can host on GitHub Pages or Netlify.</div>
+        </div>
+
+        <div style="height:14px"></div>
+        <div class="card">
+          <h4 style="margin:6px 0">Contact</h4>
+          <p style="font-size:13px;color:var(--muted);margin:6px 0">Questions or contributions? Email: <a href="mailto:replace@your-email.com">replace@your-email.com</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <section id="download" style="margin-top:22px">
+      <div class="card">
+        <h3 style="margin-top:0">Download</h3>
+        <p class="lead">Click the button to download the current PDF study pack. Replace the file at <code>/assets/wassce_a1_study_pack.pdf</code> with your final PDF.</p>
+        <div style="display:flex;gap:10px">
+          <a id="pdfLink" href="/assets/wassce_a1_study_pack.pdf" download class="btn btn-primary">Download PDF</a>
+          <a href="assets/" class="btn btn-ghost">Open assets folder</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h3 style="margin-top:0">FAQ</h3>
+        <details style="margin-bottom:8px"><summary><strong>Can I edit the notes?</strong></summary><div style="padding-top:8px;color:var(--muted)">Yes — edit the HTML or replace the PDF file in the assets folder.</div></details>
+        <details><summary><strong>How do I host this site?</strong></summary><div style="padding-top:8px;color:var(--muted)">Push this file to a GitHub repository and enable GitHub Pages, or drag-and-drop to Netlify.</div></details>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> WASSCE A1 Study Pack — Built for fast revision
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('downloadBtn').addEventListener('click', function(){
+      window.location.href = '/assets/wassce_a1_study_pack.pdf';
+    });
+    document.getElementById('previewBtn').addEventListener('click', function(){
+      window.open('/preview.html','_blank');
+    });
+  </script>
+</body>
+</html>
